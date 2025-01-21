@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.flex{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.item{
+    border: solid 1px #DC8282;
+    margin: 20px;
+    padding: 30px;
+
+}
+
+
+/* BUTTON HOVER EFFECT */
+
+.transition-button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #E1D5A9;
+    color: #3f5b68;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease;;
+    transition-delay: 1s;
+}
+
+.transition-button:hover{
+    background-color: #e4a972;
+}
+
+
+/* TEXT COLOR CHANGE */
+
+.transition-text{
+    font-size: 20px;
+    color: #3f5b68;
+    font-family: fantasy;
+    transition-property: color, font-size;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.transition-text:hover{
+    color: #a0b89f;
+    font-size: 30px;
+}
+
+
+/* SHAPE TRANSFORMATION */
+
+.transition-box{
+    background-color: #e4a972;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    transition-property: transform, background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}
+
+.transition-box:hover{
+    transform: scale(1.5) rotate(45deg);
+    background-color: #3f5b68;
+}
+
+
+/* COMBINED TRANSITION */
+
+.fancy-button{
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #a0b89f;
+    color:#3f5b68;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition-property: transform, background-color, box-shadow;
+    transition-duration: 0.3s;
+    transition-duration: ease;
+    transition-delay: 0s;
+
+}
+
+.fancy-button:hover{
+    transform: translateY(-10px) scale(1.1);
+    background-color: #E1D5A9;
+    box-shadow: 0 8px 20px #3f5b68;
+
+
+/* EXPAND AND SHRINK TEXT */  
+
+}
+
+.expand-text{
+    font-size 40px;
+    letter-spacing: 1px;
+    color: #DC8282;
+    transition-property: letter-spacing, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.expand-text:hover{
+    letter-spacing: 20px;
+    color:#e4a972 
+}
+
+
+/* INTERACTIVE W/ HOVER AND CLICK */
+
+.interactive-button{
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color:#E1D5A9;
+    color:#a0b89f;
+    cursor: pointer;
+    transition-property: background-color, transform, box-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.interactive-button:hover{
+    background-color:#E1D5A9;
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px #a0b89f;
+}
+
+.interactive-button:active{
+    background-color: #3f5b68;
+    transform: translateY(0);
+    box-shadow: 0 4px 8px #a0b89f;
+}
